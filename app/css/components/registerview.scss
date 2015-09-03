@@ -1,0 +1,19 @@
+@import "../../css/color-palette";
+@import "../../css/login-register-recover";
+
+.registerview-main {
+  @extend .inverted-background;
+  @extend .input-spacing;
+  @extend .buttons;
+  p {
+    margin-top: 0.75em;
+  }
+  p:first-of-type {
+    margin-top: 20%;
+  }
+};
+
+.registerview-header {
+  padding-top: 25%;
+  padding-bottom: 5%;
+};

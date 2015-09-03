@@ -1,0 +1,19 @@
+@import "../../css/color-palette";
+@import "../../css/login-register-recover";
+
+.recoverview-main {
+  @extend .inverted-background;
+  @extend .input-spacing;
+  @extend .buttons;
+  p {
+    margin-top: 0.75em;
+  }
+  p:first-of-type {
+    margin-top: 50%;
+  }
+};
+
+.recoverview-header {
+  padding-top: 25%;
+  padding-bottom: 25%;
+};

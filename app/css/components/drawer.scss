@@ -1,0 +1,31 @@
+@import "../../css/color-palette";
+
+.drawer-main {
+  margin-top: 50px;
+  min-height: 200px;
+  position: absolute;
+  width: 400px;
+  z-index: 900;
+  background: $dark-grey;
+  transition: 0.5s all;
+  h4 {
+    margin-left: 15px;
+    color: $light-grey;
+  }
+  .list-group-item {
+    border: 1px solid $light-grey;
+    border-radius: 0;
+    color: $dark-grey;
+  }
+  .list-group-item:first-of-type {
+    margin-top: 10px;
+  }
+};
+
+.drawer-close {
+  left: -100%;
+};
+
+.drawer-open {
+  left: 0%;
+};

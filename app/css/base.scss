@@ -1,0 +1,42 @@
+$icon-font-path: "./assets/fonts/bootstrap/";
+
+@import "reset";
+@import "color-palette";
+@import "assets/stylesheets/bootstrap";
+@import "components/application";
+@import "components/blindaddstep1";
+@import "components/blindform";
+@import "components/blindlistitem";
+@import "components/controllerlistitem";
+@import "components/controllersview";
+@import "components/drawer";
+@import "components/homeremote";
+@import "components/homeview";
+@import "components/loginview";
+@import "components/navbar";
+@import "components/recoverview";
+@import "components/registerview";
+@import "components/roominput";
+@import "components/roomlistitem";
+@import "components/roomremote";
+@import "components/roomview";
+
+@font-face {
+  font-family: Klavika;
+  src: url("../fonts/KlavikaLight-Plain.otf") format("opentype");
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  font-family: Klavika, sans-serif;
+  background: white;
+}
+
+a {
+  color: $secondary-color;
+}

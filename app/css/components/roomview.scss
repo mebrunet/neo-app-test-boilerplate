@@ -1,0 +1,65 @@
+@import "../../css/color-palette";
+
+.roomview-main {
+  height: 100%;
+  background-color: $light-grey;
+  nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  li {
+    width: 50%;
+    text-align: center;
+    background: white;
+  }
+  a {
+    border: 1px solid $light-grey;
+    border-radius: 0;
+    color: $light-grey;
+  }
+  .add-schedule {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 0 none;
+    border-radius: 35px;
+    bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background: $primary-color;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+};
+
+.roomview-roomControl {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: white;
+  .btn-group {
+    margin-top: 8px;
+    width: 70%;
+  }
+  button {
+    width: 33.3%;
+    background: white;
+    color: $primary-color;
+    border: 1 none;
+  }
+  button {
+    &:hover, &:focus, &:active:focus {
+      background: white;
+      color: $primary-color;
+      border: 1 none;
+      text-decoration: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+};

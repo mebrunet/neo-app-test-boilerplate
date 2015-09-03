@@ -1,0 +1,48 @@
+@import "../../css/color-palette";
+
+.navbar-main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  .navbar {
+    background: $primary-color;
+    color: white;
+    border: 0;
+  }
+  button {
+    background: $primary-color;
+    border:0 none {}
+    color: white;
+  }
+  button {
+    &:hover, &:focus, &:active:focus {
+      background: $primary-color;
+      border: 0 none;
+      color: white;
+      text-decoration: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+};
+
+.navbar-buttonLeft {
+  margin-top: 0.5em;
+  float: left;
+  text-align: center;
+  width: 20%;
+};
+
+.navbar-title { 
+  text-transform: uppercase;
+  margin-top: 1em;
+  float: left;
+  width: 60%;
+  text-align: center;
+};
+
+.navbar-buttonRight {
+  margin-top: 0.5em;
+  float: right;
+  width: 20%;
+};

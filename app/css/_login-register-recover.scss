@@ -1,0 +1,38 @@
+@import "color-palette";
+
+.inverted-background {
+  height: 100vh;
+  position: relative;
+  top: -50px;
+  background: $primary-color;
+  text-align: center;
+  color: white;
+  a {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.input-spacing {
+  input, .timeZoneInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  label, .input-group {
+    margin-top: 2em;
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+  .form-control {
+    margin-top: 0.25em;
+  }
+}
+
+.buttons {
+  button {
+    margin-top: 2em;
+    width: 70%;
+  }
+}
