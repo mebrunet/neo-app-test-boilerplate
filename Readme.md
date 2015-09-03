@@ -1,6 +1,6 @@
 # Neo Smart Blinds - Test View
 
-## A test build to allow freelancers to develop components for the Neo Smart Blinds Controller App
+#### A test build to allow freelancers to develop components for the Neo Smart Blinds Controller App
 
 ## Features
 
