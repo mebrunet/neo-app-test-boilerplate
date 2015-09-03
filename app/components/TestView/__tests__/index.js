@@ -8,11 +8,10 @@ import TestForm from "../../TestForm";
 describe("TestView", function() {
   const TestUtils = React.addons.TestUtils;
   var component;
-  var testForm;
+  var spy = chai.spy();
 
   beforeEach(() => {
-    component = TestUtils.renderIntoDocument(<TestView />);
-    testForm = TestUtils.findRenderedComponentWithType(component, TestForm);
+    component = TestUtils.renderIntoDocument(<TestView testSubmit= {spy} />);
   });
 
   afterEach(() => {
@@ -20,6 +19,8 @@ describe("TestView", function() {
   });
 
   it("should correctly pass handleSubmit to testForm", () => {
-    expect(1).equal(2);
+    var testForm = TestUtils.findRenderedComponentWithType(component, TestForm);
+    testForm.props.onSubmit();
+    expect(spy).to.have.been.called.once();
   });
 });

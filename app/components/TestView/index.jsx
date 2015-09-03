@@ -3,9 +3,19 @@ import React from "react";
 import TestForm from "../TestForm";
 
 export default class TestView extends React.Component {
-
+  
+  static propTypes = {
+    testSubmit: React.PropTypes.func
+  }
+  
+  static defaultProps = {
+    testSubmit: (data) => {
+      console.log(data);
+    }
+  }
+  
   handleSubmit = (data) => {
-    console.log(data);
+    this.props.testSubmit(data);
   }
 
   render() {
